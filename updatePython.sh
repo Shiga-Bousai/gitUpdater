@@ -5,5 +5,7 @@ git reset --hard origin/main
 #pip3 install -r requirements.txt
 python3 $2 gitTest
 if [ $? -gt 0 ]; then
+    git stash
     git checkout @^
+    git stash pop
 fi
