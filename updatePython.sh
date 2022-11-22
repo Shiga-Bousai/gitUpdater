@@ -1,5 +1,5 @@
 #!/bin/bash
-cd /mnt/sda1/$1
+cd $1
 echo "-----Git fetch-----"
 git fetch origin 2>&1
 git reset --hard origin/master 2>&1
